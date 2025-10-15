@@ -1,14 +1,27 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Mono, Oswald } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+import Navbar from "@/components/navbar/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const oswald = Oswald({
+  variable: "--font-oswald",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const suisseBold = localFont({
+  src: "./fonts/suisse-intl-bold.otf",
+  variable: "--font-suisse-bold",
+});
+
+const suisseRegular = localFont({
+  src: "./fonts/suisse-intl-regular.ttf",
+  variable: "--font-suisse-regular",
+});
+
+const dmMono = DM_Mono({
+  weight: ["300", "400", "500"],
+  variable: "--font-dm-mono",
   subsets: ["latin"],
 });
 
@@ -25,8 +38,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${suisseBold.variable} ${suisseRegular.variable} ${oswald.variable} ${dmMono.variable} antialiased`}
       >
+        <Navbar />
         {children}
       </body>
     </html>
