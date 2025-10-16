@@ -7,8 +7,8 @@ interface ButtonProps {
 }
 
 const buttonVariants = {
-    default: 'bg-bg-secondary small-text px-10 py-2 rounded-full',
-    small: 'bg-bg-secondary small-text px-3 py-1 rounded-full',
+    default: 'bg-secondary small-text px-10 py-2 rounded-full',
+    small: 'bg-secondary large-text px-5 py-2 rounded-full',
 }
 
 const Button: React.FC<ButtonProps> = ({ children, classname, variant }) => {

@@ -6,13 +6,14 @@
   --font-oswald: var(--font-oswald);
   --font-dm-mono: var(--font-dm-mono);
 
-  --color-bg-primary: #F9F4EB;
-  --color-bg-secondary: #000000;
-  --color-text-grey: #595858;
+  --color-primary: #F9F4EB;
+  --color-secondary: #000000;
+  --color-dark-grey: #595858;
+  --color-light-grey: #EAEAEA;
 }
 
 body { 
-  @apply bg-bg-primary;
+  @apply bg-primary;
 }
 
 .center-content {
@@ -20,13 +21,17 @@ body {
 }
 
 .paragraph1 {
-  @apply text-text-grey text-sm md:text-base font-suisse-regular;
+  @apply text-dark-grey text-sm md:text-base font-suisse-regular;
 }
 
 .paragraph2 {
-  @apply text-text-grey text-sm md:text-base font-suisse-bold;
+  @apply text-dark-grey text-sm md:text-base font-suisse-bold;
 }
 
 .small-text {
-  @apply text-bg-primary text-xs md:text-sm font-dm-mono;
+  @apply text-primary text-sm font-dm-mono;
+}
+
+.large-text {
+  @apply text-primary text-lg font-dm-mono;
 }
