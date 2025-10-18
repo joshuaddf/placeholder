@@ -17,7 +17,7 @@ const Navbar = () => {
     <>
     
     <Wrapper>
-      <nav className='w-full flex justify-between items-center h-15 md:h-28 md:px-6 z-50 relative'>
+      <nav className='w-full flex justify-between items-center h-18 md:h-28 md:px-6 z-50 relative'>
         <div className="">
           <Link href="/">Logo</Link>
         </div>

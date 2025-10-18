@@ -11,9 +11,11 @@ interface MobileMenuProps {
 
 const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
 
-  if (isOpen) {
-    document.body.style.overflow = 'hidden';
-  }
+// if(isOpen) {
+//   document.body.style.overflow = 'hidden'
+// } else {
+//   document.body.style.overflow = ''
+// }
 
   return (
     <Wrapper classname='w-full mx-auto center-content'>
