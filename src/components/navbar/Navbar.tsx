@@ -15,7 +15,6 @@ const Navbar = () => {
 
   return (
     <>
-    
     <Wrapper>
       <nav className='w-full flex justify-between items-center h-18 md:h-28 md:px-6 z-50 relative'>
         <div className="">
@@ -40,7 +39,7 @@ const Navbar = () => {
       </Wrapper>
 
       {isOpen && (
-        <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu} />
+        <MobileMenu isOpen={isOpen} toggleMenu={toggleMenu}  />
       )}
     </>
   )
