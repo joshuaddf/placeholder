@@ -32,10 +32,9 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
         onClick={toggleMenu}
       />
 
-      {/* The menu itself */}
       <div
         className='fixed z-50 bottom-5 w-[85%] rounded-xl bg-primary/[0.06] h-[23rem]'
-        onClick={(e) => e.stopPropagation()} // Prevent clicks inside from closing the menu
+        onClick={(e) => e.stopPropagation()}
       >
         <div className="center-content relative flex-col gap-5 h-full">
           <div className="absolute top-5 w-15 bg-dark-grey h-2 rounded-full" />
@@ -44,7 +43,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, toggleMenu }) => {
             {NavLinks.map(({ name, href }) => (
               <li
                 key={name}
-                onClick={toggleMenu} // closes when you tap a link
+                onClick={toggleMenu} 
                 className='font-suisse-regular uppercase text-lg text-dark-grey bg-white px-3 py-2 rounded-sm center-content'
               >
                 <Link href={href}>{name}</Link>

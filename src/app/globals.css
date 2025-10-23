@@ -6,8 +6,9 @@
   --font-oswald: var(--font-oswald);
   --font-dm-mono: var(--font-dm-mono);
 
-  --color-primary: #FFF3DD;
+  --color-primary: #F9F4EB;
   --color-secondary: #000000;
+  --color-accent: #FFD275;
   --color-dark-grey: #595858;
   --color-light-grey: #EAEAEA;
 }

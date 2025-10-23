@@ -1,3 +1,9 @@
+export const heroTitle = [
+  "filling the gaps",
+  "for ideas still in ",
+  "progress.",
+]
+
 export const sentences = [
   "explore, test, iterate — to build without",
   "overthinking and evolve without permission.",
@@ -11,3 +17,17 @@ export const paragraphs = [
   "and every version counts. Here, progress isn’t about getting it right, but about",
   "starting, staying curious, and letting things take shape naturally.",
 ];
+
+
+export const works = [
+  {
+    img: "/images/beta-dreams/img-2.png",
+    title: "Beta Dreams",
+    tag: "Visual art",
+  },
+  {
+    img: "/images/creative-debris/img-3.png",
+    title: "Creative debris",
+    tag: "Magazine",
+  }
+]
