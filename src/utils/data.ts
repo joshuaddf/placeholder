@@ -29,5 +29,25 @@ export const works = [
     img: "/images/creative-debris/img-3.png",
     title: "Creative debris",
     tag: "Magazine",
-  }
+  },
+  {
+    img: "/images/noise-patterns/img-6.png",
+    title: "Noise Patterns",
+    tag: "Generative art",
+  },
+  {
+    img: "/images/prototype/img-5.png",
+    title: "Prototype",
+    tag: "Tech exploration",
+  },
+  {
+    img: "/images/sketch-state/img-1.png",
+    title: "Sketch State",
+    tag: "visual art",
+  },
+  {
+    img: "/images/visual-identity/img-4.png",
+    title: "Visual Identity",
+    tag: "Branding",
+  },
 ]

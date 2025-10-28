@@ -1,4 +1,5 @@
 import React from 'react'
+import { twMerge } from 'tailwind-merge'
 
 interface ButtonProps {
     children: React.ReactNode
@@ -7,13 +8,13 @@ interface ButtonProps {
 }
 
 const buttonVariants = {
-    default: 'bg-secondary small-text px-10 py-2 rounded-sm',
-    small: 'bg-secondary large-text px-5 py-2 rounded-sm',
+    default: 'bg-secondary small-text px-10 py-3 rounded-sm',
+    small: 'bg-secondary large-text px-5 py-3 rounded-sm',
 }
 
-const Button: React.FC<ButtonProps> = ({ children, className, variant }) => {
+const Button: React.FC<ButtonProps> = ({ children, className='', variant }) => {
   return (
-    <div className={`${buttonVariants[variant || 'default']} ${className} uppercase`}>{children}</div>
+    <button className={twMerge(buttonVariants[variant], className)}>{children}</button>
   )
 }
 

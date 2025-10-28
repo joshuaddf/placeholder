@@ -75,12 +75,12 @@ export default function Home() {
       <section className="bg-primary my-15">
         <Wrapper>
           <div className="flex flex-col items-start">
-            <h3 className="font-oswald font-extrabold uppercase text-[5vw] pb-1">What you can expect.</h3>
+            <h3 className="font-oswald font-extrabold uppercase text-5xl md:text-5xl lg:text-6xl pb-2">What you can expect.</h3>
             <p className="font-suisse-regular text-dark-grey text-sm md:text-lg leading-4 md:leading-5 font-semibold max-w-4/5 md:max-w-1/2"> Placeholder is built on the belief that creation doesn’t need perfection to begin.
               It’s a space to explore, experiment, and evolve — where ideas grow at their own pace
               and every version counts. Here, progress isn’t about getting it right, but about
               starting, staying curious, and letting things take shape naturally.</p>
-            <Button variant="default" className="mt-3 md:mt-5"><Link href="/about-us">Read more</Link></Button>
+            <Button variant="default" className="mt-3 md:mt-4"><Link href="/about-us">Read more</Link></Button>
           </div>
           <div className="relative max-w-3/4 md:max-w-1/2 aspect-video mt-5">
             <Image
@@ -99,8 +99,9 @@ export default function Home() {
             <h3 className="font-oswald font-extrabold text-5xl md:text-6xl lg:text-8xl relative uppercase">Our works</h3>
             <span className="text-sm md:text-3xl font-extrabold">(4)</span>
           </div>
-          <div className="">
+          <div className="flex flex-col items-center gap-10 mb-20">
             <Work />
+            <Button variant="default">View all our works</Button>
           </div>
         </Wrapper>
       </section>

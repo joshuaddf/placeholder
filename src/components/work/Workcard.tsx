@@ -9,7 +9,7 @@ interface WorkProps {
 
 const Workcard: React.FC<WorkProps> = ({ img, title, tag }) => {
     return (
-        <div className="w-full md:w-1/2 h-full pb-5">
+        <div className="w-full h-full pb-5">
             <div className="relative h-[16rem] md:h-[28rem] overflow-hidden rounded-sm">
                 <Image
                     src={img}

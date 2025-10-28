@@ -3,6 +3,7 @@ import { DM_Mono, Oswald } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 const oswald = Oswald({
   variable: "--font-oswald",
@@ -42,6 +43,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
