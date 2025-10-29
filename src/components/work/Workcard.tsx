@@ -20,7 +20,7 @@ const Workcard: React.FC<WorkProps> = ({ img, title, tag }) => {
             </div>
             <div className="w-full flex items-center justify-between pt-3">
                 <h3 className="font-oswald font-semibold text-xl text-black uppercase">{title}</h3>
-                <p className="text-sm text-dark-grey font-dm-mono border-[0.5px] px-1 py-0.5 rounded-sm">{tag}</p>
+                <p className="text-sm text-dark-grey font-dm-mono border-[0.5px] px-1 py-0.5 rounded-xs">{tag}</p>
             </div>
         </div>
 

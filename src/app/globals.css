@@ -38,7 +38,7 @@ body {
 }
 
 .small-text {
-  @apply text-primary text-xs md:text-sm font-dm-mono;
+  @apply text-primary text-sm md:text-sm font-dm-mono;
 }
 
 .large-text {

@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from '../button/Button'
 import Wrapper from '../Wrapper'
+import Image from 'next/image'
+import Link from 'next/link'
 
 const Footer = () => {
     return (
@@ -10,7 +12,16 @@ const Footer = () => {
                     <div className="md:w-1/2 items-start flex flex-col gap-6">
                         <p className='text-primary font-oswald text-5xl md:text-6xl lg:text-7xl font-bold'>Ready to start something?</p>
                         <Button variant='default' className=' bg-[#1A1A1A] mt-3 md:mt-10'>Get in touch</Button>
-                        <div className="text-3xl md:text-5xl lg:text-6xl text-primary font-oswald font-bold mt-10 md:mt-10">Logo</div>
+                        {/* <div className="text-3xl md:text-5xl lg:text-6xl text-primary font-oswald font-bold mt-10 md:mt-10">Logo</div>
+                         */}
+                        <Link href='/' className='mt-10 md:mt-10'>
+                            <Image
+                                src="/svg/placeholder-primary.svg"
+                                width={350}
+                                height={350}
+                                alt="Placeholder logo"
+                            />
+                        </Link>
                     </div>
                     <div className="flex items-end justify-end flex-col text-primary mt-12 lg:mt-32">
                         <p className='text-3xl md:text-4xl lg:text-5xl font-oswald font-medium'>crafting narratives for digital voids.</p>
