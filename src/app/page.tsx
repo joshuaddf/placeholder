@@ -7,6 +7,7 @@ import HowWeCanHelp from "@/components/howWeCanHelp/HowWeCanHelp";
 import Button from "@/components/button/Button";
 import Link from "next/link";
 import Work from "@/components/work/Work";
+import { HeroTextAnime, ImageParallax, MarqueeAnime, SectionAnime, SectionParallax } from "@/components/Anime";
 
 export default function Home() {
 
@@ -14,7 +15,7 @@ export default function Home() {
     <main>
       <section className="h-[100vh]">
         <Wrapper classname="mt-15 md:mt-32 lg:mt-10">
-          <h1 className="uppercase font-oswald font-bold text-5xl md:text-6xl lg:text-8xl md:max-w-2/3 max-w-[90%] leading-12 md:leading-15 lg:leading-24 tracking-tight">Filling the gaps for ideas still in progress.</h1>
+          <HeroTextAnime className="uppercase font-oswald font-bold text-5xl md:text-6xl lg:text-8xl md:max-w-2/3 max-w-[90%] leading-12 md:leading-15 lg:leading-24 tracking-tight">Filling the gaps for ideas still in progress.</HeroTextAnime>
         </Wrapper>
 
         <div className="border-[.5px] border-dark-grey/20 mt-8 md:mt-10 " />
@@ -39,13 +40,16 @@ export default function Home() {
             </div>
           </div>
         </Wrapper>
-        <div className="bg-accent w-full">
-          <p className="uppercase text-9xl font-bold tracking-tighter text-nowrap flex overflow-x-clip items-center font-oswald px-3">We are Placeholder. We are Placeholder. </p>
+        <div className="bg-accent w-full h-20 md:h-32 flex items-start overflow-hidden mt-10 md:mt-2 ">
+          <MarqueeAnime className="uppercase text-6xl md:text-7xl lg:text-9xl font-bold tracking-tighter font-oswald px-3">
+            We are Placeholder. We are Placeholder. We are Placeholder. We are Placeholder.
+          </MarqueeAnime>
         </div>
+
       </section>
 
 
-      <section className="w-full bg-secondary py-20 md:py-28">
+      <SectionParallax className="w-full bg-secondary py-20 md:py-28">
         <Wrapper>
           <div className="w-full flex items-start gap-4">
             <p className="text-primary font-suisse-bold text-xl leading-6 md:leading-9 lg:leading-13  md:text-3xl lg:text-5xl indent-10 md:indent-26">
@@ -53,23 +57,26 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="w-full h-4/5 mt-10 md:mt-20">
-            <Image
-              src={workspace}
-              width={1440}
-              height={550}
-              objectFit="center"
-              alt="creative worskpace"
-            />
+          <div className="w-full mt-20 overflow-hidden">
+            <ImageParallax>
+              <Image
+                src={workspace}
+                width={1440}
+                height={550}
+                alt="creative workspace"
+                className="w-full h-full object-cover"
+              />
+            </ImageParallax>
           </div>
-          <div className="flex-col flex items-center md:flex-row mt-24 w-full gap-10">
+
+          <div className="flex-col flex items-center md:flex-row mt-18 w-full gap-10">
             <p className="text-primary flex-1 md:max-w-2/3 lg:max-w-3/4 font-suisse-regular font-semibold tracking-wide text-base leading-5 md:leading-7 lg:leading-9 md:text-xl lg:text-3xl">At Placeholder, we help creators, teams, and builders move from idea to iteration — faster, smarter, and without the pressure of perfection.</p>
             <div className="flex-1 flex w-full max-h-64">
               <HowWeCanHelp />
             </div>
           </div>
         </Wrapper>
-      </section>
+      </SectionParallax>
 
 
       <section className="bg-primary my-15">
@@ -83,12 +90,12 @@ export default function Home() {
             <Button variant="default" className="mt-3 md:mt-4"><Link href="/about-us">Read more</Link></Button>
           </div>
           <div className="relative max-w-3/4 md:max-w-1/2 aspect-video mt-5">
-            <Image
-              src={creativeWorkspace}
-              objectFit="cover"
-              fill
-              alt="Image description"
-            />
+              <Image
+                src={creativeWorkspace}
+                objectFit="cover"
+                fill
+                alt="Image description"
+              />
           </div>
         </Wrapper>
       </section>
